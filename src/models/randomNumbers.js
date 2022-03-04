@@ -5,9 +5,4 @@ class randomNumbers{
     }
 }
 
-/* let result = randomNumbers.getnumber(8,0)
-
-
-console.log(result) */
-
 export {randomNumbers}

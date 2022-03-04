@@ -1,7 +1,10 @@
 /* Escreva seu código aqui */
 
-*{
+
+h1{
     font-family: 'Lucida Sans', Verdana, sans-serif;
+    color: white;
+    font-size: 14px;
 }
 .circle__background{
     width: 100vw;
@@ -27,8 +30,8 @@
     align-items: center;
     flex-direction: column;
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
 
     top: 50%;
     left: 50%;
@@ -40,7 +43,7 @@
     box-shadow: 0px 5px 15px #000000de;
     backdrop-filter: blur(15px);
     
-    animation: animateBigBallColor 8s infinite;
+    
 
 }
 .circle__small{
@@ -52,29 +55,44 @@
 
     border-radius: 50%;
     background-color: #ffffff;
+  
+}
+
+.circle__small-animate{
     animation: animateSmalBallColor 8s infinite; 
 }
 
+.circle__big-animate{
+    animation: animateBigBallColor 8s infinite;
+}
 .circle__small p{
     font-size: 120px;
     font-family: 'Lucida Sans', Verdana, sans-serif;
+    text-align: center;
 }
 .btn{
     width: 120px;
     height: 40px;
-    border-radius: 25px 25px 60% 60%;
+    border-radius: 25px 25px 25px 25px;
     border: 2px solid #8d8d8d40;
     background-color: #060606;
     color: white;
     margin-top: 25px;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 14px;
+    font-family: 'Lucida Sans', Verdana, sans-serif;
     
 }
 .btn:hover{
     border: 2px solid white;
 }
 
+input{
+    margin: 8px 0 15px 0;
+    border: 3px solid #000000e3;
+    padding: 5px;
+    border-radius: 15px;
+}
  
 @keyframes animateSmalBallColor {
     0%{
